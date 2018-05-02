@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <title>Ping-Pong</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="estilo.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Juego de Pong</h1>
+        </header>
+        <section>
+            <div>
+                <form style="display: table; margin: 0px auto;">
+                    <label>Número de Jugadores:</label>
+                    <input type="radio" name="numJugadores" value="1" checked /> Uno
+                    <input type="radio" name="numJugadores" value="2" /> Dos
+                </form>
+            </div>
+            <div id="mesa">
+                <div id="p1" class="player"></div>
+                <div id="p2" class="player"></div>
+                <div id="ball"></div>
+            </div>
+        </section>
+    </body>
+</html>
