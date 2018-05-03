@@ -4,7 +4,7 @@
         <title>Ping-Pong</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="estilo.css" />
         <script src="script.js"></script>
     </head>
@@ -14,16 +14,34 @@
         </header>
         <section>
             <div>
-                <form style="display: table; margin: 0px auto;">
-                    <label>Número de Jugadores:</label>
-                    <input type="radio" name="numJugadores" value="1" checked /> Uno
-                    <input type="radio" name="numJugadores" value="2" /> Dos
+                <form style="display: table; margin: 0px auto 20px;">
+                    <div title="Este recurso no está listo!">
+                        <label>Número de Jugadores:</label>
+                        <input type="radio" name="numJugadores" value="1" onclick="cambiarConfiguracion()" disabled="true" checked /> Uno
+                        <input type="radio" name="numJugadores" value="2" onclick="cambiarConfiguracion()" disabled="true"  /> Dos
+                    </div>
+                    <div>
+                        <label>Dificultad:</label>
+                        <input type="radio" name="dificultad" value="1" onclick="cambiarConfiguracion()" checked /> Fácil
+                        <input type="radio" name="dificultad" value="3" onclick="cambiarConfiguracion()" disabled /> Intermediário
+                        <input type="radio" name="dificultad" value="5" onclick="cambiarConfiguracion()" disabled /> Difícil
+                    </div>
                 </form>
             </div>
-            <div id="mesa">
-                <div id="p1" class="player"></div>
-                <div id="p2" class="player"></div>
-                <div id="ball"></div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div id="mesa" class="col-8">
+                    <div id="placar">
+                        Puntos: <span id="puntosP1">0</span>
+                    </div>
+                    <div id="p1" class="player"></div>
+                    <div id="p2" class="player"></div>
+                    <div id="ball"></div>
+                    <div id="comandos">
+                        Space: Start/Pause/Restart Game &nbsp; &nbsp; &nbsp; W/S: Move Racket
+                    </div>
+                </div>
+                <div class="col-2"></div>
             </div>
         </section>
     </body>
