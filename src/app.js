@@ -1,5 +1,5 @@
 const Blockchain = require("./blockchain").Blockchain;
-const Block = require("./block");
+const Block = require("./block").Block;
 
 console.log(Blockchain);
 const jsChain = new Blockchain();

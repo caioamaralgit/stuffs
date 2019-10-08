@@ -1,10 +1,12 @@
+const Block = require("./block").Block;
+
 class Blockchain {
     constructor() {
         this.chain = [this.createGenesis()];
     }
 
     createGenesis() {
-        return new Blockchain(0, "02/09/2019", "Genesis block", 0);
+        return new Block(0, "02/09/2019", "Genesis block", "0");
     }
 
     latestBlock() {
