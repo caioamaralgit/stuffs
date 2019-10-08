@@ -1,0 +1,31 @@
+{
+  "name": "my-blockchain",
+  "version": "1.0.0",
+  "description": "This project is created following the [Spenser Huang tutorial](https://medium.com/@spenserhuang/learn-build-a-javascript-blockchain-part-1-ca61c285821e), in Medium.",
+  "main": "build/app.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "crypto-js": "^3.1.9-1",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "node node_modules/babel-cli/bin/babel src -d build",
+    "start": "node build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caioamaralgit/my-blockchain.git"
+  },
+  "keywords": [
+    "blockchain"
+  ],
+  "author": "Caio Amaral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caioamaralgit/my-blockchain/issues"
+  },
+  "homepage": "https://github.com/caioamaralgit/my-blockchain#readme"
+}
