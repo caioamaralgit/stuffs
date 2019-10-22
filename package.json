@@ -12,8 +12,8 @@
   "devDependencies": {},
   "scripts": {
     "build": "node node_modules/babel-cli/bin/babel src -d build",
-    "start": "node build/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bstart": "npm run build && npm start",
+    "start": "node build/app.js"
   },
   "repository": {
     "type": "git",
