@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('app');
-});
+Route::get('/', 'MainController@index');
+Route::post('/', 'MainController@sendMessage');

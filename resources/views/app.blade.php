@@ -22,11 +22,11 @@
         <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
     </head>
     <body>
-        @include("partials.navbar")
+        <!-- @include("partials.navbar") -->
         @include("sections.header")        
         @include("sections.countdown")        
         @include("sections.history")        
         @include("sections.gallery")        
-        @include("sections.wall")        
+        @include("sections.wall", $messages)        
     </body>
 </html>
