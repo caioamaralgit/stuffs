@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    background-color: #ECECEC;
+    margin: 0px;
+    padding: 10px;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+}
