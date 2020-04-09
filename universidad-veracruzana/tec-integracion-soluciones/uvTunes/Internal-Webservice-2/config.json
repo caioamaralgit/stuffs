@@ -1,0 +1,18 @@
+{
+    "mailConfig": {
+        "service": "gmail",
+        "auth": {
+            "user": "uvtunes2018@gmail.com",
+            "pass": "uvtunes2018!"
+        },
+        "tls": {
+            "rejectUnauthorized": false
+        }
+    },
+    "mysqlConnection": {
+        "host": "127.0.0.1",
+        "user": "uvtunes",
+        "password": "DJdmqeMlyn!",
+        "database": "uvtunes"
+    }
+}

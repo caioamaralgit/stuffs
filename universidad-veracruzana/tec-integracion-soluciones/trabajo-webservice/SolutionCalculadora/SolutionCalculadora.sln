@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{460A989D-21AA-43AF-8564-125E8C4A1167}"
+	ProjectSection(SolutionItems) = preProject
+		ISWCalculadora.cs = ISWCalculadora.cs
+		WSCalculadora.cs = WSCalculadora.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteForm", "ClienteForm\ClienteForm.csproj", "{3DCA96A2-71F0-4E62-A275-84FEFAA964B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DCA96A2-71F0-4E62-A275-84FEFAA964B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCA96A2-71F0-4E62-A275-84FEFAA964B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DCA96A2-71F0-4E62-A275-84FEFAA964B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCA96A2-71F0-4E62-A275-84FEFAA964B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28354458-8F19-4E12-A500-F89EA48B232D}
+	EndGlobalSection
+EndGlobal

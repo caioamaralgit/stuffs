@@ -1,0 +1,28 @@
+{
+  "name": "uvtunes-internal-webservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "forever": "forever start server.js",
+    "foreverdev": "forever -c nodemon start server.js",
+    "start": "node ."
+  },
+  "author": "Caio Amaral",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "forever": "^0.15.3",
+    "mysql": "^2.15.0",
+    "needle": "^2.2.1",
+    "nodemailer": "^4.6.5",
+    "uuid-token-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

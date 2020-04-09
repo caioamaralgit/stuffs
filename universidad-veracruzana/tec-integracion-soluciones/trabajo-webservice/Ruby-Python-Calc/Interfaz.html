@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cliente</title>
+</head>
+<body>
+	<!-– action indica por donde se va enviar informacion de los formularios –->
+<form action="http://localhost:4567/Suma" method="post">
+	<input type="number" name="txtNum1" id="txtNum1">
+	<input type="number" name="txtNum2" id="txtNum2">
+	<input type="submit" name="btnEnviar" value="Sumar">
+</form>
+<form action="http://localhost:4567/Resta" method="post">
+	<input type="number" name="txtNum1" id="txtNum1">
+	<input type="number" name="txtNum2" id="txtNum2">
+	<input type="submit" name="btnEnviar" value="Restar">
+</form>
+<form action="http://localhost:4567/Multiplicar" method="post">
+	<input type="number" name="txtNum1" id="txtNum1">
+	<input type="number" name="txtNum2" id="txtNum2">
+	<input type="submit" name="btnEnviar" value="Multiplicar">
+</form>
+<form action="http://localhost:4567/Dividir" method="post">
+	<input type="number" name="txtNum1" id="txtNum1">
+	<input type="number" name="txtNum2" id="txtNum2">
+	<input type="submit" name="btnEnviar" value="Dividir">
+</form>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <title>uvTunes Web Services</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <style>
+            body {
+                text-align: center;
+            }
+
+            code {
+                background: #49483E;
+                color: #FFF;
+                display: table;
+                font-family: Consolas, monospace;
+                margin: 10px auto;
+                max-width: 600px;
+                padding: 10px;
+                text-align: left;
+            }
+
+                code span.attr {
+                    color: #52ff00;
+                }
+
+                code span.subattr {
+                    color: #539dff;
+                }
+            
+            h3 {
+                font-weight: normal;
+            }
+
+            .operacion {
+                display: table;
+                margin: 0px auto;
+            }
+
+            ul {
+                display: table;
+                margin: 0px auto;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>uvTunes Web Services</h1>
+        <div>
+            Este es el sitio para acceder a los servicios de la uvTunes. <br /><br />
+            <hr />
+            <div class="operacion">
+                <h3><b>Operación:</b> Consultar estoque</h3><br />
+                Esa operación regresa todos los articulos y sus cantidades en el stock de uvTunes. <br />
+                El proveedor envía una petición GET para la URL 
+                <span style="color: #00F; text-decoration: underline;">https://uvtunes-external-webservice.azurewebsites.net/external_webservice/servicios/proveedores</span>
+                con su credencial, y el sistema regresa un JSON con el exito de la operación y un arreglo con los productos. <br />
+                Las variables deben ser enviadas como parámetros en la URL.<br /><br />
+                <p>
+                    <u>El proveedor envía a la uvTunes:</u>
+                    <ul>
+                        <li><i>string:</i> Credencial del proveedor</li>
+                    </ul>
+                </p><br />
+                <p>
+                    <u>El proveedor recibe de la uvTunes:</u>
+                    <ul>
+                        <li><i>boolean:</i> Éxito de la operación</li>
+                        <li>
+                            <i>array:</i> Productos en estoque
+                            <ul>
+                                <li><i>int:</i> Id del producto (id común entre las bases)</li>
+                                <li><i>string:</i> Nombre del producto</li>
+                                <li><i>int:</i> Cantidad solicitada del producto</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p><br />
+                <p>
+                    <b>Ejemplo de comunicación</b><br /><br />
+                    1. El proveedor envia:
+                    <code>
+                        proveedores?<span class="attr">credencial</span>=1MO2FPFPOMFMP
+                    </code><br />
+                    2. El web service retorna:
+                    <code>
+                        { <span class="attr">“exito”</span>: true, <br /> &nbsp;
+                          <span class="attr">“productos”</span>: [ <br /> &nbsp; &nbsp; &nbsp;
+                                { <span class="subattr">“id”</span>: 5, 
+                                  <span class="subattr">“nombre”</span>: “Shatter Me”, 
+                                  <span class="subattr">“cantidad”</span>: 2 }, <br /> &nbsp; &nbsp; &nbsp;
+                                { <span class="subattr">“id”</span>: 21, 
+                                  <span class="subattr">“nombre”</span>: “Uncharted”, 
+                                  <span class="subattr">“cantidad”</span>: 1 }, <br /> &nbsp; &nbsp; &nbsp;
+                                { <span class="subattr">“id”</span>: 26, 
+                                  <span class="subattr">“nombre”</span>: “Thor”, 
+                                  <span class="subattr">“cantidad”</span>: 3 } <br /> &nbsp;
+                          ]} 
+                    </code>
+                </p>
+            </div>
+            <hr />
+            <div class="operacion">
+                <h3><b>Operación:</b> Hacer sugerencia</h3><br />
+                Esa operación recibe y guarda una sugerencia hecha por el proveedor. <br />
+                El proveedor envía una petición POST para la URL 
+                <span style="color: #00F; text-decoration: underline;">https://uvtunes-external-webservice.azurewebsites.net/external_webservice/servicios/proveedores</span>
+                con su credencial y la sugerencia, y el sistema regresa un JSON con el exito de la operación. <br />
+                Las variables deben ser enviadas como parámetros en la URL.
+                <p>
+                    <u>El proveedor envía a la uvTunes:</u>
+                    <ul>
+                        <li><i>string:</i> Credencial del proveedor</li>
+                        <li><i>string:</i> Sugerencia que desea enviar</li>
+                    </ul>
+                </p><br />
+                <p>
+                    <u>El proveedor recibe de la uvTunes:</u>
+                    <ul>
+                        <li><i>boolean:</i> Éxito de la operación</li>
+                    </ul>
+                </p><br />
+                <p>
+                    <b>Ejemplo de comunicación</b><br /><br />
+                    1. El proveedor envia:
+                    <code>
+                        proveedores?<span class="attr">credencial</span>=1MO2FPFPOMFMP<span style="color: #FF5B5B;">&</span><span class="attr">sugerencia</span>=&lt;Sugerencia&gt;
+                    </code><br />
+                    2. El web service retorna:
+                    <code>
+                        { <span class="attr">“exito”</span>: true }
+                    </code>
+                </p>
+            </div>
+            <hr />
+        </div>
+        <footer>
+            uvTunes, 2018 - 
+            Desarrolado por <a href="https://github.com/firepho92/" target="_blank">Alexandro Aguilar</a> y <a href="http://linkedin.com/in/caio-amaral" target="_blank">Caio Amaral</a>
+        </footer>
+    </body>
+</html>

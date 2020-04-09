@@ -1,0 +1,8 @@
+.info-box{
+  height: 330px;
+  width: 100%;
+  border: 1px solid #d8dde2;
+  border-radius: 2px;
+  text-align: left;
+  padding: 1em;
+}

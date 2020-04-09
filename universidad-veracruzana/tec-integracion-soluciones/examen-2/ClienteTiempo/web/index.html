@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Conversor de Tiempo REST</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                text-align: center;
+            }
+            
+            table {
+                margin: 0px auto;
+            }
+            
+            td {
+                padding: 2px 10px;
+            }
+        </style>
+        <script>
+            function hacerPeticion(fuente) {
+                let monto = (isNaN(fuente.value) ? 0 : fuente.value);
+                let uFuente, uDestino;
+                
+                if (fuente.id === "valor1") {
+                    uFuente = document.getElementById("unidad1").value;
+                    uDestino = document.getElementById("unidad2").value;
+                } else {
+                    uFuente = document.getElementById("unidad2").value;
+                    uDestino = document.getElementById("unidad1").value;
+                }
+                
+                const xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        let response = JSON.parse(this.responseText);                        
+                        document.getElementById(fuente.id === "valor1" ? "valor2" : "valor1").value = response.resultado;
+                    }
+                };
+                xhttp.open("GET", `ConsumirTiempo?monto=${monto}&uFuente=${uFuente}&uDestino=${uDestino}`, true);
+                xhttp.send();
+            }
+        </script>
+    </head>
+    <body style="text-align: center;">
+        <h1>Conversor de Tiempo</h1>
+        <div>
+            <table>
+                <tr>
+                    <td><input id="valor1" type="text" onkeyup="hacerPeticion(this);" /></td>
+                    <td rowspan="2">=</td>
+                    <td><input id="valor2" type="text" onkeyup="hacerPeticion(this);" /></td>                    
+                </tr>
+                <tr>
+                    <td>
+                        <select id="unidad1">
+                            <option value="segundo">Segundos</option>
+                            <option value="minuto">Minutos</option>
+                            <option value="hora">Horas</option>
+                            <option value="dia">Dias</option>
+                            <option value="semana">Semanas</option>
+                            <option value="mes">Meses</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="unidad2">
+                            <option value="segundo">Segundos</option>
+                            <option value="minuto" selected>Minutos</option>
+                            <option value="hora">Horas</option>
+                            <option value="dia">Dias</option>
+                            <option value="semana">Semanas</option>
+                            <option value="mes">Meses</option>
+                        </select>
+                    </td>                    
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

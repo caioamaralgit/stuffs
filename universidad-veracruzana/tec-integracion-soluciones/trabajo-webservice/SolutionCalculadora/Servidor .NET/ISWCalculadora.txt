@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Web;
+using System.Text;
+
+namespace WcfService1
+{
+    // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de interfaz "IService1" en el código y en el archivo de configuración a la vez.
+    [ServiceContract]
+   
+
+        public interface IWSCalculadora
+        {
+
+            [OperationContract]
+            string suma(string p1, string b2);
+
+            [OperationContract]
+            string resta(string p1, string b2);
+
+            [OperationContract]
+            string multiplicar(string p1, string b2);
+
+            [OperationContract]
+            string dividir(string p1, string p2);
+
+            [OperationContract]
+            string exponente(string p1, string p2);
+
+            [OperationContract]
+            string raiz(string p1);
+
+            // TODO: agregue aquí sus operaciones de servicio
+        }
+
+        // TODO: agregue aquí sus operaciones de servicio
+    
+
+
+    // Utilice un contrato de datos, como se ilustra en el ejemplo siguiente, para agregar tipos compuestos a las operaciones de servicio.
+  
+}

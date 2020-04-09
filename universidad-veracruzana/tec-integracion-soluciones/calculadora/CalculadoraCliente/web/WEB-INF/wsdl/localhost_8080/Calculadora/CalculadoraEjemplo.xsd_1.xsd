@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://uv.mx/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://uv.mx/">
+
+<xs:element name="Division" type="tns:Division"/>
+
+<xs:element name="DivisionResponse" type="tns:DivisionResponse"/>
+
+<xs:element name="Exponenciacion" type="tns:Exponenciacion"/>
+
+<xs:element name="ExponenciacionResponse" type="tns:ExponenciacionResponse"/>
+
+<xs:element name="Multiplicacion" type="tns:Multiplicacion"/>
+
+<xs:element name="MultiplicacionResponse" type="tns:MultiplicacionResponse"/>
+
+<xs:element name="RaizCuadrada" type="tns:RaizCuadrada"/>
+
+<xs:element name="RaizCuadradaResponse" type="tns:RaizCuadradaResponse"/>
+
+<xs:element name="Resta" type="tns:Resta"/>
+
+<xs:element name="RestaResponse" type="tns:RestaResponse"/>
+
+<xs:element name="Suma" type="tns:Suma"/>
+
+<xs:element name="SumaResponse" type="tns:SumaResponse"/>
+
+<xs:complexType name="RaizCuadrada">
+<xs:sequence>
+<xs:element name="base" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RaizCuadradaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Resta">
+<xs:sequence>
+<xs:element name="p1" type="xs:string" minOccurs="0"/>
+<xs:element name="p2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RestaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Division">
+<xs:sequence>
+<xs:element name="p1" type="xs:string" minOccurs="0"/>
+<xs:element name="p2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DivisionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Multiplicacion">
+<xs:sequence>
+<xs:element name="p1" type="xs:string" minOccurs="0"/>
+<xs:element name="p2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MultiplicacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exponenciacion">
+<xs:sequence>
+<xs:element name="base" type="xs:string" minOccurs="0"/>
+<xs:element name="exponente" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ExponenciacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Suma">
+<xs:sequence>
+<xs:element name="p1" type="xs:string" minOccurs="0"/>
+<xs:element name="p2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
