@@ -1,0 +1,129 @@
+#content {
+    display: table;
+    margin: 61px auto 0px;
+    max-width: 725px;
+    padding: 20px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+    #content > * {
+        border: 1px solid #000;
+        border-radius: 10px;
+        float: left;
+    }
+
+#fileShortcut {
+    margin: 0px;
+    max-height: 384px;
+    padding: 0px;
+    width: 70%;
+}
+    #fileShortcut > div {
+        padding: 0px;
+    }
+
+    #fileShortcut > div:first-child {
+        border-right: 1px solid #000;
+    }
+
+    #fileShortcut > div > div:first-child {
+        font-weight: bold;
+        padding: 10px 0px 0px;
+    }
+
+    #files-favorites, #files-last-created {
+        max-height: 315px;
+        overflow-y: auto;
+    }
+
+    .file.row {
+        cursor: pointer;
+        font-size: .7em;
+        margin: 0px 0px 5px;
+        max-height: 60px;
+        overflow: hidden;
+        text-align: left;
+    }
+
+        .file.row:hover {
+            background: #ECECEC;
+        }
+
+        .file .portrait {
+            background-image: url('../images/file-rounded-outlined-symbol.png');
+            background-repeat: no-repeat; 
+            background-size: contain; 
+            background-position: center;
+        }
+
+#goToFiles, #goToFiles-small {
+    background: #00F;
+    color: #FFF;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%;
+}
+
+    #goToFiles:hover {
+        font-weight: bold;
+    }
+
+#goToFiles-small {
+    display: none;
+}
+
+#userBox {
+    font-size: .8em;
+    margin-right: 20px;
+    padding: 10px;
+    width: 27%;
+    word-break: break-all;
+}
+
+    #userBox div {
+        margin: 20px 0px;
+    }
+
+    #userBox img {
+        border: 3px solid #000;
+        border-radius: 50%; 
+        width: 130px;
+    }
+
+#user-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@media (max-width: 695px) {
+    #fileShortcut, #goToFiles-small, #userBox {
+        margin: 5px 0px;
+        width: 100%;
+    }
+
+    #goToFiles {
+        display: none;
+    }
+
+    #goToFiles-small {
+        display: inline-block;
+    }
+
+    #userBox {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 767px) {
+    #fileShortcut {
+        max-height: none;
+    }
+
+        #fileShortcut > div:first-child {
+            border-right: 0px;
+            border-bottom: 1px solid #000;
+        }
+}

@@ -1,0 +1,4 @@
+{
+    "data-server": "https://pdf-cloud-data-server.herokuapp.com",
+    "file-server": "http://caioaba.pythonanywhere.com"
+}

@@ -1,0 +1,111 @@
+.custom-file-label[for=form-upload-file]::after {
+    content: "Elegir"
+}
+
+.error {
+    background: #FFB8B8;
+    border: 1px solid #FF0000;
+}
+
+#filesList {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+    #filesList .row {
+        margin: 0px;
+    }
+
+#form-upload {
+    overflow: hidden;    
+}
+
+#form-upload-file-content {
+    display: none;
+    margin-left: 100%;
+    margin-right: -100%;
+}
+.form-upload-info h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+    .form-upload-info div {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+#form-upload-message {
+    text-align: left;
+}
+
+    #form-upload-message img {
+        width: 38px;
+    }
+
+.form-upload-screen {
+    background: #FFF;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+}
+
+    .form-upload-screen.active {
+        background: #00F;
+    }
+
+label[for=form-upload-file] {
+    overflow: hidden;
+}
+
+.noUi-target {
+    height: 10px !important;
+    margin-top: 9px;
+}
+
+.noUi-handle {
+    height: 20px !important;
+}
+
+.noUi-tooltip {
+    height: 25px !important;
+    font-size: 0.6em !important;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+    height: 7px !important;
+}
+
+.select2-folder-0 {
+    border-top: 1px solid #000;
+}
+
+.select2-img {
+    margin: -5px 5px 0px 0px;
+    width: 17px;
+}
+
+.sortable-handler { 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position: center;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px !important;
+    margin-top: 3px;
+}
+
+.upload-modal-footer {
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+    text-align: right;
+}
+
+@media (max-width: 575px) {
+    .upload-modal-footer .col-12, #form-upload-message {
+        text-align: center;
+    }
+}

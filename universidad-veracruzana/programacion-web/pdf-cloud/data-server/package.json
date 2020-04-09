@@ -1,0 +1,32 @@
+{
+  "name": "pdf-cloud-data-server",
+  "version": "1.0.0",
+  "description": "A PDF hosting system.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CbarretoSUD/pdf-cloud-data-server.git"
+  },
+  "author": "Caio Amaral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CbarretoSUD/pdf-cloud-data-server/issues"
+  },
+  "homepage": "https://github.com/CbarretoSUD/pdf-cloud-data-server#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.2",
+    "mysql": "^2.15.0",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}

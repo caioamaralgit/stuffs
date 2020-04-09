@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <title>PDF Cloud</title>
+
+        <meta charset="utf-8" />
+        <meta name="theme-color" content="#D4E6FB" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/about.css" />
+
+        <script type="text/javascript" src="dist/base.js"></script>
+        <script type="text/javascript" src="dist/about.js"></script>        
+    </head>
+    <body>          
+        <nav id="nav-large">
+            <div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/nuvem.png" style="height: 50px;" />
+                    </div>
+                    <div class="col-md-3">                    
+                        <a href="#queEs">Lo que es</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#comoFunciona">Como Funciona</a>
+                    </div>
+                    <div class="col-md-3" style="position: relative;">
+                        <a style="color: #007bff; cursor: pointer;" onclick="showModal('login')">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav id="nav-small">
+            <div>
+                <img src="images/nuvem.png" style="height: 50px;" onclick="$('#nav-small-options').toggle();" />
+            </div>
+            <div id="nav-small-options">
+                <div>                    
+                    <a href="#queEs" onclick="$('#nav-small-options').toggle();">Lo que es</a>
+                </div>
+                <div>
+                    <a href="#comoFunciona" onclick="$('#nav-small-options').toggle();">Como Funciona</a>
+                </div>
+                <div>
+                    <a style="color: #007bff; cursor: pointer;" onclick="showModal('registro')">Registrar</a>
+                </div>
+                <div>
+                    <a style="color: #007bff; cursor: pointer;" onclick="showModal('login')">Entrar</a>
+                </div>
+            </div>
+        </nav>
+        <div id="modal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-login">
+                        <div class="form-group">
+                            <label for="login-email">Email:</label>
+                            <input type="email" class="form-control" id="login-email" maxlength="50" />
+                        </div>
+                        <div class="form-group">
+                            <label for="login-contrasena">Contraseña:</label>
+                            <input type="password" class="form-control" id="login-contrasena" maxlength="20" />
+                        </div>
+                        <div style="margin-top: -17px; text-align: left;">
+                            <a href="#" style="font-size: 0.7em; font-weight: normal;">Olvidé mi contraseña</a>
+                        </div>
+                        <hr />
+                        <div style="text-align: center;">
+                            No tiene cuenta? 
+                            <a style="color: #007bff; cursor: pointer;" onclick="showModal('registro')">¡Registrate!</a>
+                        </div>
+                    </form>
+                    <form id="form-registro">
+                        <div class="form-group">
+                            <label for="registro-nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="registro-nombre" maxlength="80" />
+                        </div>
+                        <div class="form-group">
+                            <label for="registro-apellido">Apellido:</label>
+                            <input type="text" class="form-control" id="registro-apellido" maxlength="80" />
+                        </div>
+                        <div class="form-group">
+                            <label for="registro-email">Email:</label>
+                            <input type="email" class="form-control" id="registro-email" maxlength="50" />
+                        </div>
+                        <div class="form-group">
+                            <label for="registro-contrasena">Contraseña:</label>
+                            <input type="password" class="form-control" id="registro-contrasena" maxlength="20" />
+                        </div>
+                        <div class="form-group">
+                            <label for="registro-vcontrasena">Confirme la contraseña:</label>
+                            <input type="password" class="form-control" id="registro-vcontrasena" maxlength="20" />
+                        </div>
+                    </form>
+                    <div class="alert" role="alert" id="modal-alert">
+                        This is a danger alert—check it out!
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="modal-action"></button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                </div>
+                </div>
+            </div>
+        </div>        
+        <section id="queEs">        
+            <div class="row">
+                <div class="col-md-4 img logo" style="background-image: url('images/logo.png');"></div>
+                <div class="col-md-8">
+                    <h1>PDF Cloud</h1>
+                </div>
+            </div>
+            <h2 style="font-size: 2em; margin: 50px 0px;">Es un servicio para almacenar archivos PDF y accesarlos donde estiver</h2>
+            <div class="row">
+                <div class="col-3 img" style="background-image: url('images/laptop.png');"></div>
+                <div class="col-2 img" style="background-image: url('images/arrow-right.png'); background-size: 50%;"></div>
+                <div class="col-2 img" style="background-image: url('images/logo.png');"></div>
+                <div class="col-2 img" style="background-image: url('images/arrow-right.png'); background-size: 50%;"></div>
+                <div class="col-3 img" style="background-image: url('images/tablet-digital-device.png');"></div>
+            </div>
+        </section>
+        <section id="comoFunciona">
+            <h1>Como Funciona</h1>
+            <div class="row">
+                <div class="col-6 img big" style="background-image: url('images/man-working-on-a-laptop-from-side-view.png');"></div>
+                <div class="col-6 vertical-align">
+                    <div>
+                        <b>1.</b> &nbsp; Selecciona sus archivos
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 vertical-align">                    
+                    <div>
+                        <b>2.</b> &nbsp; Hace upload
+                    </div>
+                </div>
+                <div class="col-6 img big" style="background-image: url('images/cloud-computing.png');"></div>
+            </div>
+            <div class="row">
+                <div class="col-6 row">
+                    <div class="col-4 img" style="background-image: url('images/file-rounded-outlined-symbol.png');"></div>
+                    <div class="col-4 img" style="background-image: url('images/shuffle-arrows-hand-drawn-symbol.png');"></div>
+                    <div class="col-4 img" style="background-image: url('images/text-documents.png');"></div>
+                </div>
+                <div class="col-6 vertical-align">                    
+                    <div>
+                        <b>3.</b> &nbsp; Hace los cambios
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 vertical-align">                            
+                    <div>            
+                        <b>4.</b> &nbsp; ¡Listo! Su archivo esta online 
+                    </div>
+                </div>
+                <div class="col-6 img big" style="background-image: url('images/cloud-data.png');"></div>
+            </div>
+        </section>
+        <article id="startNow">
+            <a style="color: #007bff; cursor: pointer;" onclick="showModal('registro')">¡Empieza Ahora!</a>
+        </article>
+        <footer>
+            Hecho por <a href="https://www.linkedin.com/in/caio-amaral" target="_blank">Caio Amaral</a> - 2018
+        </footer>
+    </body>
+</html>
