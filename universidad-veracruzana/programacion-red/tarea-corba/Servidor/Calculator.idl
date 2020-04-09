@@ -1,0 +1,13 @@
+module Calculator
+{
+  interface Operations
+  {
+    long suma(in long a,in long b);
+    long resta(in long a,in long b);
+    long multiplicacion(in long a,in long b);
+    float division(in long a,in long b);
+    double potencia(in long a,in long b);
+    double raizc(in long a);
+    oneway void desligar();
+    };
+};

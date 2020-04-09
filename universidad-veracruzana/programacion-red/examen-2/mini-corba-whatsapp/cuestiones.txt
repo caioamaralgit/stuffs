@@ -1,0 +1,16 @@
+* Describe la arquitectura general que seguiría tu solución (módulos, clientes, servidores, etc.)
+- Un servidor que se encargaria de recibir los clientes y manejarlos, y un otro que se ocuparia de guardar y consultar 
+las mensajes en una base de datos. Ellos se comunicarian por medio de CORBA.
+Los clientes basicamente podrían agregar contactos, enviar mensajes y recibir mensajes (ya que es una versión "Mini").
+
+* Define las interfaces IDL de tus distintos módulos y explica el uso que tendría cada método.
+
+* Describe el flujo que seguiría la ejecución del sistema, debe quedar clara la forma en que los objetos 
+remotos son utilizados.
+- Llamaré el servidor de manejo de clientes de "Servidor A" y el servidor que maneja la base de datos de "Servidor B".
+Cuando el cliente ejecutar la aplicación, el programa envia una petición para el servidor A, que cria un socket con el cliente.
+Después, el servidor A se comunica con el servidor B, que por su vez verificar si hay mensajes que el cliente todavía no leyó.
+Eses datos son pasados para el servidor A que responde al cliente con una mensaje de exito (eso no se muestra en la pantalla) 
+y con la lista de mensajes que no fueran vistas por el cliente. 
+Cuando un cliente ve un mensaje nueva, una petición pasa por el servidor A, que la repasa para B diciendo que actualize la base.
+Igual cuando envia un mensaje.

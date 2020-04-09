@@ -1,0 +1,17 @@
+﻿¿Qué medidas tomaste para evitar un posible deadlock (abrazo de la muerte)?
+- Los métodos que interaccionan con el mismo recurso son todos synchronized, así que no van 
+a ser ejecutados al mismo tiempo. Eso impide que los hilos intenten escribir juntos en el mismo 
+recurso.
+
+¿Qué medidas tomaste para evitar un posible problema de muerte por inanición?
+- El tiempo de sleep de cada hilo es pequeño, así que regresa a verificar si el regalo ya esta 
+listo rápidamente. Y así que abre el regalo ya busca crear otro nuevo.
+
+¿Qué medidas tomaste para asegurar la integridad de los regalos?
+- El método regaloListo impide que el hilo abra el regalo caso este no esté completo o caso contenga 
+un objeto inserido por este mismo hilo.
+
+¿Qué medidas tomaste para que los hilos que no pudieran trabajar por x razón no gastaran recursos?
+- El tiempo de sleep asegura que los hilos no van quedar usando muchos recursos. Como en este 
+escenario hay solamente 3 hilos haciendo una operación simple, este tiempo es suficiente para los 
+otros hilos crearen el regalo. Caso no sea, el hilo simplemente va esperar por más 3 segundos.

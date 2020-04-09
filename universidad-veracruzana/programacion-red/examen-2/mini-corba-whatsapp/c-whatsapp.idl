@@ -1,0 +1,8 @@
+module ServerA
+{
+  interface Operations
+  {
+    string message(string mensaje);
+    oneway void desligar();
+  };
+};

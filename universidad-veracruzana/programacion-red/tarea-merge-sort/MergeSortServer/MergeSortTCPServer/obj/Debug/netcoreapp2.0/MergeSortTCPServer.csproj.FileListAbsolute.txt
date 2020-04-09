@@ -1,0 +1,11 @@
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\bin\Debug\netcoreapp2.0\MergeSortTCPServer.deps.json
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\bin\Debug\netcoreapp2.0\MergeSortTCPServer.runtimeconfig.json
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\bin\Debug\netcoreapp2.0\MergeSortTCPServer.runtimeconfig.dev.json
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\bin\Debug\netcoreapp2.0\MergeSortTCPServer.dll
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\bin\Debug\netcoreapp2.0\MergeSortTCPServer.pdb
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\obj\Debug\netcoreapp2.0\MergeSortTCPServer.csprojResolveAssemblyReference.cache
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\obj\Debug\netcoreapp2.0\MergeSortTCPServer.csproj.CoreCompileInputs.cache
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\obj\Debug\netcoreapp2.0\MergeSortTCPServer.AssemblyInfoInputs.cache
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\obj\Debug\netcoreapp2.0\MergeSortTCPServer.AssemblyInfo.cs
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\obj\Debug\netcoreapp2.0\MergeSortTCPServer.dll
+D:\Cloud\OneDrive - Centro Paula Souza - FATEC\Projetos\programacion-red\tarea-merge-sort\MergeSortServer\MergeSortTCPServer\obj\Debug\netcoreapp2.0\MergeSortTCPServer.pdb

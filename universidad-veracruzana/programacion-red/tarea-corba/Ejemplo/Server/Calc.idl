@@ -1,0 +1,6 @@
+module Calculator {
+    interface Suma {
+        long add(in long a, in long b);
+        oneway void shutdown();
+    };
+};
