@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <title>UV - Índice de Equipos</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/base.css" />
+        <script src="js/functions.js"></script>
+        <script>
+            (() => window.onload = () => {
+                document.getElementById("botonMenu").style.top = document.getElementById("menu").clientHeight + "px";
+            })();
+        </script>
+    </head>
+    <body>
+        <nav id="menu">
+            <div>
+                <span>Torneo de Verano de la UV:</span>
+                <a href="index.html">Índice de Equipos</a>
+                <a href="registro.html">Registrar Equipo</a>
+            </div>
+            <div id="botonMenu" onclick="alternarMenu()">
+                Mostrar Menu
+            </div>
+        </nav>
+        <header>
+            <h1>Índice de Equipos</h1>
+        </header>
+        <article>
+            <div style="display: table; margin: 0px auto;">
+                <ol>
+                    <li>
+                        <a href="informaciones.html?id=1">Los Xalapeños</a>
+                    </li>
+                    <li>
+                        <a href="informaciones.html?id=2">Monos</a>
+                    </li>
+                    <li>
+                        <a href="informaciones.html?id=3">UVFC</a>
+                    </li>
+                    <li>
+                        <a href="informaciones.html?id=4">Toros</a>
+                    </li>
+                </ol>
+            </div>
+        </article>
+        <footer>Sitio desarrollado por <a href="" target="_blank">Caio Amaral</a></footer>
+    </body>
+</html>

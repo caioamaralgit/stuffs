@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <title>Formulario JS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="validar.js"></script>
+  </head>
+
+  <body>
+    <div id="error" style="display:none;">
+      Errores al enviar el formulario.
+    </div>
+    <form id="formulario" action="falsa.html">
+       <fieldset>
+	 <legend>Información personal:</legend>
+
+	 <div class="row">
+	   <label class="col-2" for="nombre">Nombre:</label>
+	   <input class="col-10" id="nombre" type="text" name="nombre"/>
+	 </div>
+
+	 <div class="row">
+	   <label class="col-2" for="apellido">Apellido:</label>
+	   <input class="col-10" id="apellido" type="text" name="apellido"/>
+	 </div>
+
+	 <div class="row">
+	   <label class="col-2" for="edad">Edad:</label>
+	   <input class="col-10" id="edad" type="number" name="edad"/>
+	 </div>
+
+	 <div class="row">
+	   <div class="col-5"></div>
+	   <input class="col-2" type="submit" />
+	   <div class="col-5"></div>
+	 </div>
+
+       </fieldset>
+    </form>
+    
+  </body>
+  
+</html>

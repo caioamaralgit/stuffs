@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>ALJO99</user>
+    <password>ALJO99</password>
+    <nombre>Alan Joset Garca Cruz</nombre>
+  </usuario>
+  <usuario lugar="0" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>angel</user>
+    <password>angel</password>
+    <nombre>angel</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>ANDE04</user>
+    <password>ANDE04</password>
+    <nombre>Angel de Jesus Bustamante toto</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>ANED60</user>
+    <password>ANED60</password>
+    <nombre>Angel Eduardo Dominguez Delgado</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>CHUB68</user>
+    <password>CHUB68</password>
+    <nombre>Christian Ubaldo Promotor</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>CAAR59</user>
+    <password>CAAR59</password>
+    <nombre>Cmara rciga Miguel Alejandro</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>ENRO18</user>
+    <password>ENRO18</password>
+    <nombre>Enrique Rodriguez Castaeda</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>ERCA74</user>
+    <password>ERCA74</password>
+    <nombre>Erasmo Carlos Torres Sanrromn</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>FAPE48</user>
+    <password>FAPE48</password>
+    <nombre>Fabin Pedro Landero Martnez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>FEDE36</user>
+    <password>FEDE36</password>
+    <nombre>Felipe de Jess Ramirez Rodriguez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>FRHE19</user>
+    <password>FRHE19</password>
+    <nombre>Francisco Hernndez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>GEMA84</user>
+    <password>GEMA84</password>
+    <nombre>Gerardo Mares Solano</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>GOAL54</user>
+    <password>GOAL54</password>
+    <nombre>Gomez Alejandre</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>IRDE05</user>
+    <password>IRDE05</password>
+    <nombre>Irvin Dereb Vera Lopez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>ISRE64</user>
+    <password>ISRE64</password>
+    <nombre>Israel Reyes Ozuna</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>JEEM20</user>
+    <password>JEEM20</password>
+    <nombre>Jess Emilio Montiel Eslava</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>JEEN91</user>
+    <password>JEEN91</password>
+    <nombre>Jess Enrique Flores Nestozo</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>JOAL49</user>
+    <password>JOAL49</password>
+    <nombre>Jos Alberto Expinoza Castillo</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>JOAL25</user>
+    <password>JOAL25</password>
+    <nombre>Jos Alonso Lora Gonzlez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>JOAN00</user>
+    <password>JOAN00</password>
+    <nombre>Jos Andrs Domnguez Gonzlez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>JOCL00</user>
+    <password>JOCL00</password>
+    <nombre>Jos Clemente Hernndez Hernndez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>JOMA19</user>
+    <password>JOMA19</password>
+    <nombre>Jos Manuel Prez Verdejo</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>KAFE74</user>
+    <password>KAFE74</password>
+    <nombre>Karla Fernanda Guevara Flores</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>LEDA64</user>
+    <password>LEDA64</password>
+    <nombre>Leopoldo Daniel Lara Aparicio</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>MATE61</user>
+    <password>MATE61</password>
+    <nombre>Maribel Tello Rodriguez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>MARO20</user>
+    <password>MARO20</password>
+    <nombre>Mario Roberto Galvan Tellez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>MABA76</user>
+    <password>MABA76</password>
+    <nombre>Mark Bayam Rentera Morales</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>MILE16</user>
+    <password>MILE16</password>
+    <nombre>Miguel leonardo Jimenez Jimenez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>MIHE42</user>
+    <password>MIHE42</password>
+    <nombre>Missael Hernndez Rosado</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>NIRE71</user>
+    <password>NIRE71</password>
+    <nombre>Nilda Renata Gonzlez Nova</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>PEAL00</user>
+    <password>PEAL00</password>
+    <nombre>Pedro Alfonso Bravo Cibrian</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>SAEL55</user>
+    <password>SAEL55</password>
+    <nombre>Samuel Elas Gaona Hernndez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>SAEN86</user>
+    <password>SAEN86</password>
+    <nombre>Saul Enrique Melchor Ramirez</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>SUGO95</user>
+    <password>SUGO95</password>
+    <nombre>Susana Gonzalez Portilla</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>VIMI96</user>
+    <password>VIMI96</password>
+    <nombre>Vctor Miguel Antonio Contreras Figueroa</nombre>
+  </usuario>
+  <usuario lugar="1" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>VIHU40</user>
+    <password>VIHU40</password>
+    <nombre>Victor Hugo Hernndez Hoyos</nombre>
+  </usuario>
+  <usuario lugar="0" tipoConcurso="2" puntage="0" tiempo="0" logeado="0">
+    <user>xl666</user>
+    <password>xl666</password>
+    <nombre>xl</nombre>
+  </usuario>
+</usuarios>

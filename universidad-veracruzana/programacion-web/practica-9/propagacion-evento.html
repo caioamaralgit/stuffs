@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul id="lista">
+            <li id="gato">Gato</li>
+            <li id="perro">Perro</li>
+        </ul>
+
+        <form>
+            <input type="text" id="texto" />
+        </form>
+    </body>
+    <script>
+        let gato = document.getElementById("gato");
+        let lista = document.getElementById("lista");
+
+        gato.onclick = () => { alert("Gato") };
+        lista.onclick = () => { alert("En lista") };
+
+        let texto = document.getElementById("texto");
+
+        texto.onfocus = () => { document.body.style.backgroundColor = "#000"; };
+        texto.onblur = () => { document.body.style.backgroundColor = "#FFF"; };
+    </script>
+</html>

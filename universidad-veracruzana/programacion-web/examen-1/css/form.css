@@ -1,0 +1,41 @@
+.error {
+    border: 1px solid #F00;
+    background-color: #FF9B9B;
+    color: #F00;
+}
+
+form {
+    text-align: center;
+}
+
+    form div {
+        margin: 10px;
+    }
+
+    form fieldset {
+        border: 0px;
+        padding: 0px;
+    }
+
+    form input {
+        border: 1px solid #404040;
+        border-radius: 5px;
+    }
+
+    form input[type=button] {
+        background-color: #DDD;
+        border: 1px solid #404040;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+
+        form input[type=button]:hover {
+            background: #404040;
+            color: #FFF;
+        }
+
+label {
+    font-weight: bold;
+}

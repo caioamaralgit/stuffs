@@ -1,5 +1,6 @@
 **/node_modules
 **/.vscode
+**/*.mp4
 **/*.pdf
 **/*.pyc
 **/*.sqlite3

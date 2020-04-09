@@ -1,0 +1,13 @@
+#alert {
+    display: none;
+}
+
+.has-error {
+    border: 1px solid #FF8888;
+    background-color: #FFCCCC;
+}
+
+#submit-button {
+    display: block;
+    margin: 0px auto;
+}

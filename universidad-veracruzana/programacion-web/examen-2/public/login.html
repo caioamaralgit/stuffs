@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro</title>   
+
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/form.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="js/login.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Tinder UV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <h1>Login</h1>
+        </header>
+        <section>
+            <div class="alert alert-danger" id="alert"></div>
+            <form action="index.html" method="POST" id="form-login">
+                <div class="form-group">
+                    <label for="form-usuario">Usuario:</label>
+                    <input type="text" class="form-control" id="form-usuario" name="usuario">
+                </div>
+                <div class="form-group">
+                    <label for="form-contrasena">Contraseña:</label>
+                    <input type="password" class="form-control" id="form-contrasena" name="contrasena">
+                </div>
+                <button class="btn btn-primary mb-2" id="submit-button" type="button" onclick="hacerLogin();">Login</button>
+            </form>
+        </section>
+        <footer>
+            Hecho por Caio Amaral - 29/05/2018
+        </footer>
+    </body>
+</html>

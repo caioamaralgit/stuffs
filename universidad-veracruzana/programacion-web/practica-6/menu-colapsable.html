@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu Colapsable</title>
+        <script>
+            function alternarMenu(menuId) {
+                var menu = document.getElementById(menuId);
+
+                if (menu.style.display == "none") menu.style.display = "block";
+                else menu.style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Menu Colapsable</h1>
+        <ul>
+            <li onclick="alternarMenu('lista-1')" style="cursor: pointer;" title="Alternar menu">Opción 1
+                <ul id="lista-1" style="display: none;">
+                    <li>Opción 1.1</li>          
+                    <li>Opción 1.2</li>          
+                    <li>Opción 1.3</li>          
+                </ul>
+            </li>
+            <li onclick="alternarMenu('lista-2')" style="cursor: pointer;" title="Alternar menu">Opción 2
+                <ul id="lista-2" style="display: none;">
+                    <li>Opción 2.1</li>          
+                    <li>Opción 2.2</li>          
+                    <li>Opción 2.3</li>          
+                </ul>
+            </li>
+            <li onclick="alternarMenu('lista-3')" style="cursor: pointer;" title="Alternar menu">Opción 3
+                <ul id="lista-3" style="display: none;">
+                    <li>Opción 3.1</li>          
+                    <li>Opción 3.2</li>          
+                    <li>Opción 3.3</li>          
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

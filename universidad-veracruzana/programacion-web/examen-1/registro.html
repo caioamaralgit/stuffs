@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <title>UV - Registro de Equipos</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <script src="js/functions.js"></script>
+        <script>
+            (() => window.onload = () => {
+                document.getElementById("botonMenu").style.top = document.getElementById("menu").clientHeight + "px";
+            })();
+        </script>
+    </head>
+    <body>
+        <nav id="menu">
+            <div>
+                <span>Torneo de Verano de la UV:</span>
+                <a href="index.html">Índice de Equipos</a>
+                <a href="registro.html">Registrar Equipo</a>
+            </div>
+            <div id="botonMenu" onclick="alternarMenu()">
+                Ocultar Menu
+            </div>
+        </nav>
+        <header>
+            <h1>Registro de Equipo</h1>
+        </header>
+        <article>
+            <form action="registrar.html" method="POST">
+                <fieldset>
+                    <div class="row">
+                        <label class="col-3">Nombre:</label>
+                        <input id="nombre" class="col-9" name="nombre" type="text" onfocus="this.className = 'col-9'" />
+                    </div>
+                    <div class="row">
+                        <label class="col-3">Número de Integrantes:</label>
+                        <input id="integrantes" class="col-9" name="integrantes" type="number" onfocus="this.className = 'col-9'" />
+                    </div>
+                    <div class="row">
+                        <label class="col-3">Correo para Contacto:</label>
+                        <input id="email" class="col-9" name="email" type="email" onfocus="this.className = 'col-9'" />
+                    </div><br />
+                    <input type="button" onclick="verificarForm(this.form)" value="Registrar" />
+                </fieldset>
+            </form>
+        </article>
+        <footer>Sitio desarrollado por <a href="" target="_blank">Caio Amaral</a></footer>
+    </body>
+</html>
